@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maseraga Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+</head>
+<body>
+
+        <div class="God">
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </div>
+        <section id="Home">
+        <h1><strong>Hi,i'm <span>Paulina</span> Seleka from South Africa</strong></h1>
+       <h2>I'm a Junior Web Developer</h2>
+        
+            <div class="profile-image">
+            <img src="Browser/Paulina.jpg" width="350px"height="300px" alt="Paulina">
+            </div>
+        </section>
+       
+        <div id="about" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+             <img src="Browser/Seleka.jpg" width="300px" height="340px" alt="Seleka">
+                    </div>
+                    <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1>     
+                   <p>My name is Paulina Seleka, a recent graduate with a degree in Information Technology, specializing in Software Development. Throughout my academic journey, I have developed a passion for creating innovative solutions that seamlessly blend technology and user experience. My educational background has equipped me with a strong foundation in programming languages, software design principles, and project management. </p>
+                 
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                  
+                    </div>
+                    <div class="tab-contents active-tab"id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br/>HTML,CSS,Javascript,Bootstrap & PHP</li>
+                            <li><span>Database Administrator</span><br/>XAMPP MySQL & SQL</li>
+                            <li><span>System Development</span><br/>C++,C# & Java</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br/>Higher Certificates in Web Development at Richfield College</li>
+                            <li><span>2021-2023</span><br/>Bsc in Information technology IN Software Development</li>
+
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="project" class="section">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="projects-list">
+                    
+                   
+ <div class="projects">
+<h2><strong>BMW Landing Page</strong></h2>
+<img src="Workshop/images/OIP (3).jpg" width="350px" height="300px"></br/>
+<p>Used bootstrap,CSS,HTML&Javascript</p>
+<a href="https://maseraga.github.io/BMW-Landing-Page/"target="BMW 325i Workshop.html">BMW 325i Workshop.html</a>
+ </div>
+ <div class="projects">
+    <h2><strong>Dr Appointment Website</strong></h2>
+    <img src="Temperature/cli.jpg"width=350px height="300px"><br/>
+    <p>Used HTML,CSS&Javascript</p>
+    <a href="https://maseraga.github.io/Booking-Appointment/Dr%20Appointment.html#Home"target="Dr Appointment.html">Dr Appointment.html</a><br/>
+
+    
+</div>
+                <div class="projects" >
+                    
+                    <h2><strong>Temperature Converter</strong></h2>
+                    <img src="Temperature/Pictures/Clouds.jpg" width="350px" height="300px"><br/>
+                    <p>Used HTML,CSS&Javascript</p>
+                    <a href="Temperature/Temperature Converter Website.html"target="Temperature coverter.html">Temperature Converterter.html</a>
+                </div>
+                
+                <div class="projects" >
+
+                    <h2><strong>GLAM&GLOSS Booking System</strong></h2>
+                    <img src="Beauty Parlor System/Beauty parlor/Screenshot (40).png" width="350px" height="300px"><br/>
+                    <p>Used HTML,CSS,Javascript,PHP& XAMPP MySQL</p>
+                    <a href="Beauty Parlor System/Beauty Parlor.html"target="Beauty Parlor.html">Beauty Parlor.html</a>
+
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <!--contact-->
+
+        <div id="contact" class="section">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="contact-info">
+                    <h1 class="sub-title">Contact</h1><br/>
+                    <p i class="ri-send-plane-fill"></i>maseragapaulina609@gmail.com</p><br/>
+                    <p i class="ri-phone-line"></i>065-517-5804</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/paulina-seleka-741b9323a" target="Linkedin profile"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://github.com/Maseraga " target="Github profile"><i class="ri-github-fill"></i></a>
+                    </div>
+                    <a href="Browser/Paulina resume.pdf" download class="btn: btn2">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+           </div>
+      
+        
+    <footer>
+       <div class="copyright">
+        <p><strong>© 2024 Seleka Paulina. All Rights Reserved</strong></p>
+      </div>
+    </footer>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+}
+function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("active");
+        }
+
+    
+
+</script>
+</body>
+</html>
